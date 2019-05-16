@@ -1,0 +1,75 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+$yellow: #F5DD16;
+$dark-grey: #7C7C7C;
+$light-grey: #BEBEBE;
+$red: #EE4525;
+
+.navbar{
+  background-color: $dark-grey;
+  .navbar-brand{
+    color: $yellow !important;
+  }
+}
+
+.tasks_list{
+  margin-top: 40px;
+  .title{
+    font-size: 22px;
+    color: $dark-grey;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .card{
+    background-color: $dark-grey;
+    table{
+      tbody > tr:nth-child(1) > td{
+        border-top: 0;
+      }
+      color: white;
+      font-weight: 500;
+      margin-bottom: 5px;
+
+      .check{
+        color: $yellow;
+        font-size: 15px;
+      }
+      .delete{
+        color: white;
+      }
+    }
+  }
+}
